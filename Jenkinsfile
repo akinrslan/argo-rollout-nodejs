@@ -5,8 +5,8 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME = "ooghenekaro/argo-rollout-bluegreen"
+    DOCKERHUB_CREDENTIALS = credentials('akinino-dockerhub')
+    APP_NAME = "blue-green-rollout-oct"
     }
     stages { 
         stage('SCM Checkout') {
