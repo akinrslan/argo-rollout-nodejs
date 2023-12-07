@@ -6,7 +6,7 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('akinino-dockerhub')
-    APP_NAME = "blue-green-rollout-oct"
+    APP_NAME = "akinino/blue-green-rollout-oct"
     }
     stages { 
         stage('SCM Checkout') {
