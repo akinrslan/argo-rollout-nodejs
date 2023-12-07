@@ -5,7 +5,7 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('akinino-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('akin-dockerhub')
     APP_NAME = "akinino/blue-green-rollout-oct"
     }
     stages { 
